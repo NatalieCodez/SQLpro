@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "sql-mcp-server": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": [
+        "dab",
+        "start",
+        "--mcp-stdio",
+        "role:anonymous",
+        "--loglevel",
+        "error",
+        "--config",
+        "${workspaceFolder}/dab-config.json"
+      ]
+    }
+  }
+}
