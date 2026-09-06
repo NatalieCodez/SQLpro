@@ -8,11 +8,13 @@
         "start",
         "--mcp-stdio",
         "role:anonymous",
-        "--loglevel",
-        "error",
+        "--LogLevel",
+        "Error",
         "--config",
         "${workspaceFolder}/dab-config.json"
-      ]
+      ],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
     }
   }
 }
